@@ -1,0 +1,437 @@
+EurekaLog 5.0.1
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Tue, 15 Jan 2013 11:20:44 -0300
+  1.2 Name/Description: dicom_worklist.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+  1.5 Compilation Date: Tue, 15 Jan 2013 11:20:43 -0300
+
+Exception:
+-------------------------------------------------------------------------------------------------------------
+  2.1 Date   : Tue, 15 Jan 2013 11:21:03 -0300
+  2.2 Address: 00404A52
+  2.3 Module : dicom_worklist.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 00404A52 in module 'dicom_worklist.exe'. Read of address 00000006.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TForm1
+  3.2 Form Text    : Worklist
+  3.3 Control Class: TButton
+  3.4 Control Text : Button1
+
+Computer:
+---------------------------------------------------------------------
+  4.1 Name          : MOTA-CTI
+  4.2 User          : andre
+  4.3 Total Memory  : 2039 Mb
+  4.4 Free Memory   : 982 Mb
+  4.5 Total Disk    : 43,07 Gb
+  4.6 Free Disk     : 5,37 Gb
+  4.7 System Up Time: 00:02:42:12
+  4.8 Processor     : Intel(R) Core(TM)2 Duo CPU     E7300  @ 2.66GHz
+  4.9 Display Mode  : 1280 x 720 x 32
+
+Operating System:
+------------------------------------
+  5.1 Type    : Microsoft Windows XP
+  5.2 Build # : 2600
+  5.3 Update  : Service Pack 3
+  5.4 Language: Português (Brasil)
+
+Network:
+--------------------------------
+  6.1 IP Address: 192.168.1.55
+  6.2 Submask   : 255.255.255.0
+  6.3 Gateway   : 192.168.1.1
+  6.4 DNS 1     : 200.175.5.139
+  6.5 DNS 2     : 200.175.89.139
+  6.6 DHCP      : OFF
+
+Call Stack Information:
+--------------------------------------------------------------------------------------------
+|Address |Module            |Unit              |Class    |Procedure/Method            |Line|
+--------------------------------------------------------------------------------------------
+| Running Thread: ID=3108; Priority=0; Class=; [Main]                                      |
+|------------------------------------------------------------------------------------------|
+|0049EAA5|dicom_worklist.exe|worklist.pas      |TWorklist|CriarXML                    |68  |
+|0049EA30|dicom_worklist.exe|worklist.pas      |TWorklist|CriarXML                    |60  |
+|0049ED76|dicom_worklist.exe|main.pas          |TForm1   |Button1Click                |32  |
+|7E3799D3|user32.dll        |                  |         |NotifyWinEvent              |    |
+|7E3799CB|user32.dll        |                  |         |NotifyWinEvent              |    |
+|7C90ECBA|ntdll.dll         |                  |         |RtlMultiByteToUnicodeN      |    |
+|7C90EB94|ntdll.dll         |                  |         |RtlAnsiStringToUnicodeString|    |
+|7C90D328|ntdll.dll         |                  |         |ZwFindAtom                  |    |
+|7E37A97D|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E379719|user32.dll        |                  |         |PtInRect                    |    |
+|7E3792DE|user32.dll        |                  |         |SendMessageW                |    |
+|7E37929A|user32.dll        |                  |         |SendMessageW                |    |
+|7E37A993|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E37A97D|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E37C1E4|user32.dll        |                  |         |DefWindowProcA              |    |
+|7C9010E0|ntdll.dll         |                  |         |RtlLeaveCriticalSection     |    |
+|7E3694DA|user32.dll        |                  |         |GetCapture                  |    |
+|7E37B3FC|user32.dll        |                  |         |CallNextHookEx              |    |
+|7E3696C2|user32.dll        |                  |         |DispatchMessageA            |    |
+|7E3696B8|user32.dll        |                  |         |DispatchMessageA            |    |
+|0049F157|dicom_worklist.exe|dicom_worklist.dpr|         |                            |14  |
+|7C90DCB8|ntdll.dll         |                  |         |ZwSetInformationThread      |    |
+--------------------------------------------------------------------------------------------
+
+Modules Information:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name              |Description                                       |Version         |Size   |Modified           |Path                                                                                                |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|00400000|dicom_worklist.exe|                                                  |                |750080 |2013-01-15 11:20:44|C:\workspace\dicom_worklist                                                                         |
+|5B1C0000|uxtheme.dll       |Biblioteca UxTheme Microsoft                      |6.0.2900.5512   |219648 |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+|5D510000|comctl32.dll      |Common Controls Library                           |5.82.2900.6028  |617472 |2010-08-23 13:12:00|C:\WINDOWS\system32                                                                                 |
+|69B10000|msxml4.dll        |MSXML 4.0 SP 2                                    |4.20.9876.0     |1348432|2009-07-21 00:05:40|C:\WINDOWS\system32                                                                                 |
+|71A60000|WS2HELP.dll       |DLL de ajuda do Windows Socket 2.0 para Windows NT|5.1.2600.5512   |19968  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|71A70000|WS2_32.dll        |Windows Socket 2.0 32-Bit DLL                     |5.1.2600.5512   |82432  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|71A90000|wsock32.dll       |DLL de soquete para Windows de 32 bits            |5.1.2600.5512   |25088  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|72FB0000|winspool.drv      |Driver de spooler do Windows                      |5.1.2600.5512   |146944 |2008-04-13 23:21:28|C:\WINDOWS\system32                                                                                 |
+|746E0000|MSCTF.dll         |DLL de servidor MSCTF                             |5.1.2600.5512   |297984 |2008-04-13 23:20:32|C:\WINDOWS\system32                                                                                 |
+|75290000|msctfime.ime      |Microsoft Text Frame Work Service IME             |5.1.2600.5768   |177152 |2009-02-27 01:57:32|C:\WINDOWS\system32                                                                                 |
+|76360000|IMM32.DLL         |Windows XP IMM32 API Client DLL                   |5.1.2600.5512   |110080 |2008-04-13 23:20:28|C:\WINDOWS\system32                                                                                 |
+|76BD0000|PSAPI.DLL         |Process Status Helper                             |5.1.2600.5512   |23040  |2008-04-13 23:20:38|C:\WINDOWS\system32                                                                                 |
+|76FB0000|CLBCATQ.DLL       |                                                  |2001.12.4414.700|498688 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77030000|COMRes.dll        |                                                  |2001.12.4414.700|821760 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77100000|oleaut32.dll      |                                                  |5.1.2600.6058   |551936 |2010-12-20 14:32:04|C:\WINDOWS\system32                                                                                 |
+|773B0000|comctl32.dll      |User Experience Controls Library                  |6.0.2900.6028   |1054208|2010-08-23 13:11:58|C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202|
+|774C0000|ole32.dll         |Microsoft OLE para Windows e Windows NT           |5.1.2600.6168   |1288192|2011-11-01 13:07:10|C:\WINDOWS\system32                                                                                 |
+|77B20000|apphelp.dll       |Application Compatibility Client Library          |5.1.2600.5512   |125952 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77BE0000|version.dll       |Version Checking and File Installation Libraries  |5.1.2600.5512   |18944  |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+|77BF0000|msvcrt.dll        |Windows NT CRT DLL                                |7.0.2600.5512   |343040 |2008-04-13 23:20:34|C:\WINDOWS\system32                                                                                 |
+|77DB0000|RPCRT4.dll        |Remote Procedure Call Runtime                     |5.1.2600.6022   |590848 |2010-08-16 05:45:00|C:\WINDOWS\system32                                                                                 |
+|77E50000|GDI32.dll         |GDI Client DLL                                    |5.1.2600.5698   |286720 |2008-10-23 09:37:46|C:\WINDOWS\system32                                                                                 |
+|77EA0000|SHLWAPI.dll       |Biblioteca de utilitário abreviado para Shell     |6.0.2900.5912   |474112 |2009-12-08 06:24:26|C:\WINDOWS\system32                                                                                 |
+|77F20000|Secur32.dll       |Security Support Provider Interface               |5.1.2600.5834   |56832  |2009-06-25 05:27:14|C:\WINDOWS\system32                                                                                 |
+|77F50000|advapi32.dll      |API de base do Windows 32 avançada                |5.1.2600.5755   |683520 |2009-02-09 07:53:26|C:\WINDOWS\system32                                                                                 |
+|7C800000|kernel32.dll      |DLL cliente da API BASE do Windows NT             |5.1.2600.5781   |1028608|2009-03-21 11:08:54|C:\WINDOWS\system32                                                                                 |
+|7C900000|ntdll.dll         |DLL de nível do NT                                |5.1.2600.6055   |734208 |2010-12-09 12:15:18|C:\WINDOWS\system32                                                                                 |
+|7C9C0000|shell32.dll       |DLL comum do Shell do Windows                     |6.0.2900.6242   |8492544|2012-06-08 11:25:20|C:\WINDOWS\system32                                                                                 |
+|7E360000|user32.dll        |DLL de Cliente API de usuário Windows XP          |5.1.2600.5512   |579072 |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0013F610   EDI: 0013F7A8
+EBX: 009BE680   ESI: 00000000
+ECX: 00000000   ESP: 0013F5F0
+EDX: 00000006   EIP: 00404A52
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0013F5F0: 0049EAAA   00404A52: 8A 0A 42 E9 82 FE FF FF C3 90 57 50 51 89 D7 31  ..B.......WPQ..1
+0013F5F4: 0013F95C   00404A62: C0 F2 AE 75 02 F7 D1 58 01 C1 58 5F E9 69 FE FF  ...u...X..X_.i..
+0013F5F8: 0040409C   00404A72: FF C3 57 50 51 89 D7 31 C0 F2 66 AF 75 02 F7 D1  ..WPQ..1..f.u...
+0013F5FC: 0013F624   00404A82: 58 01 C1 58 5F E9 BC FE FF FF C3 8D 40 00 31 C9  X..X_.......@.1.
+0013F600: 0045B4A0   00404A92: 85 D2 74 05 8B 4A FC D1 E9 E9 A8 FE FF FF C3 8D  ..t..J..........
+0013F604: 009BE680   00404AA2: 40 00 53 85 D2 74 18 8B 5A FC 85 DB 74 11 39 D9  @.S..t..Z...t.9.
+0013F608: 00000000   00404AB2: 7C 02 89 D9 88 08 40 92 E8 C5 DF FF FF 5B C3 C6  |.....@......[..
+0013F60C: 00000000   00404AC2: 00 00 5B C3 8B C0 85 C0 74 03 8B 40 FC C3 85 D2  ..[.....t..@....
+0013F610: 00000000   00404AD2: 74 3F 8B 08 85 C9 0F 84 62 FD FF FF 53 56 57 89  t?......b...SVW.
+0013F614: 00000000   00404AE2: C3 89 D6 8B 79 FC 8B 56 FC 01 FA 39 CE 74 17 E8  ....y..V...9.t..
+0013F618: 00000000   00404AF2: 5E 03 00 00 89 F0 8B 4E FC 8B 13 01 FA E8 80 DF  ^......N........
+0013F61C: 00000000   00404B02: FF FF 5F 5E 5B C3 E8 47 03 00 00 8B 03 89 F9 EB  .._^[..G........
+0013F620: 00000000   00404B12: E8 C3 85 D2 74 61 85 C9 0F 84 20 FD FF FF 3B 10  ....ta.... ...;.
+0013F624: 0013F76C   00404B22: 74 5C 3B 08 74 0E 50 51 E8 11 FD FF FF 5A 58 E9  t\;.t.PQ.....ZX.
+0013F628: 0049ED7B   00404B32: 9A FF FF FF 53 56 57 89 D3 89 CE 50 8B 43 FC 03  ....SVW....P.C..
+0013F62C: 009BF6EC   00404B42: 46 FC E8 67 FD FF FF 89 C7 89 C2 89 D8 8B 4B FC  F..g..........K.
+
+
+
+EurekaLog 5.0.1
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Tue, 15 Jan 2013 11:21:08 -0300
+  1.2 Name/Description: dicom_worklist.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+  1.5 Compilation Date: Tue, 15 Jan 2013 11:20:43 -0300
+
+Exception:
+-------------------------------------------------------------------------------------------------------------
+  2.1 Date   : Tue, 15 Jan 2013 11:22:31 -0300
+  2.2 Address: 00404A52
+  2.3 Module : dicom_worklist.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 00404A52 in module 'dicom_worklist.exe'. Read of address 00000006.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TForm1
+  3.2 Form Text    : Worklist
+  3.3 Control Class: TButton
+  3.4 Control Text : Button1
+
+Computer:
+---------------------------------------------------------------------
+  4.1 Name          : MOTA-CTI
+  4.2 User          : andre
+  4.3 Total Memory  : 2039 Mb
+  4.4 Free Memory   : 983 Mb
+  4.5 Total Disk    : 43,07 Gb
+  4.6 Free Disk     : 5,37 Gb
+  4.7 System Up Time: 00:02:43:40
+  4.8 Processor     : Intel(R) Core(TM)2 Duo CPU     E7300  @ 2.66GHz
+  4.9 Display Mode  : 1280 x 720 x 32
+
+Operating System:
+------------------------------------
+  5.1 Type    : Microsoft Windows XP
+  5.2 Build # : 2600
+  5.3 Update  : Service Pack 3
+  5.4 Language: Português (Brasil)
+
+Network:
+--------------------------------
+  6.1 IP Address: 192.168.1.55
+  6.2 Submask   : 255.255.255.0
+  6.3 Gateway   : 192.168.1.1
+  6.4 DNS 1     : 200.175.5.139
+  6.5 DNS 2     : 200.175.89.139
+  6.6 DHCP      : OFF
+
+Call Stack Information:
+--------------------------------------------------------------------------------------------
+|Address |Module            |Unit              |Class    |Procedure/Method            |Line|
+--------------------------------------------------------------------------------------------
+| Running Thread: ID=1144; Priority=0; Class=; [Main]                                      |
+|------------------------------------------------------------------------------------------|
+|0049EAA5|dicom_worklist.exe|worklist.pas      |TWorklist|CriarXML                    |68  |
+|0049EA30|dicom_worklist.exe|worklist.pas      |TWorklist|CriarXML                    |60  |
+|0049ED76|dicom_worklist.exe|main.pas          |TForm1   |Button1Click                |32  |
+|7E3799D3|user32.dll        |                  |         |NotifyWinEvent              |    |
+|7E3799CB|user32.dll        |                  |         |NotifyWinEvent              |    |
+|7C90ECBA|ntdll.dll         |                  |         |RtlMultiByteToUnicodeN      |    |
+|7C90EB94|ntdll.dll         |                  |         |RtlAnsiStringToUnicodeString|    |
+|7C90D328|ntdll.dll         |                  |         |ZwFindAtom                  |    |
+|7E37A97D|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E379719|user32.dll        |                  |         |PtInRect                    |    |
+|7E3792DE|user32.dll        |                  |         |SendMessageW                |    |
+|7E37929A|user32.dll        |                  |         |SendMessageW                |    |
+|7E37A993|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E37A97D|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E37C1E4|user32.dll        |                  |         |DefWindowProcA              |    |
+|7C9010E0|ntdll.dll         |                  |         |RtlLeaveCriticalSection     |    |
+|7E3694DA|user32.dll        |                  |         |GetCapture                  |    |
+|7E37B3FC|user32.dll        |                  |         |CallNextHookEx              |    |
+|7E3696C2|user32.dll        |                  |         |DispatchMessageA            |    |
+|7E3696B8|user32.dll        |                  |         |DispatchMessageA            |    |
+|0049F157|dicom_worklist.exe|dicom_worklist.dpr|         |                            |14  |
+|7C90DCB8|ntdll.dll         |                  |         |ZwSetInformationThread      |    |
+--------------------------------------------------------------------------------------------
+
+Modules Information:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name              |Description                                       |Version         |Size   |Modified           |Path                                                                                                |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|00400000|dicom_worklist.exe|                                                  |                |750080 |2013-01-15 11:20:44|C:\workspace\dicom_worklist                                                                         |
+|5B1C0000|uxtheme.dll       |Biblioteca UxTheme Microsoft                      |6.0.2900.5512   |219648 |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+|5D510000|comctl32.dll      |Common Controls Library                           |5.82.2900.6028  |617472 |2010-08-23 13:12:00|C:\WINDOWS\system32                                                                                 |
+|69B10000|msxml4.dll        |MSXML 4.0 SP 2                                    |4.20.9876.0     |1348432|2009-07-21 00:05:40|C:\WINDOWS\system32                                                                                 |
+|71A60000|WS2HELP.dll       |DLL de ajuda do Windows Socket 2.0 para Windows NT|5.1.2600.5512   |19968  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|71A70000|WS2_32.dll        |Windows Socket 2.0 32-Bit DLL                     |5.1.2600.5512   |82432  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|71A90000|wsock32.dll       |DLL de soquete para Windows de 32 bits            |5.1.2600.5512   |25088  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|72FB0000|winspool.drv      |Driver de spooler do Windows                      |5.1.2600.5512   |146944 |2008-04-13 23:21:28|C:\WINDOWS\system32                                                                                 |
+|746E0000|MSCTF.dll         |DLL de servidor MSCTF                             |5.1.2600.5512   |297984 |2008-04-13 23:20:32|C:\WINDOWS\system32                                                                                 |
+|75290000|msctfime.ime      |Microsoft Text Frame Work Service IME             |5.1.2600.5768   |177152 |2009-02-27 01:57:32|C:\WINDOWS\system32                                                                                 |
+|76360000|IMM32.DLL         |Windows XP IMM32 API Client DLL                   |5.1.2600.5512   |110080 |2008-04-13 23:20:28|C:\WINDOWS\system32                                                                                 |
+|76BD0000|PSAPI.DLL         |Process Status Helper                             |5.1.2600.5512   |23040  |2008-04-13 23:20:38|C:\WINDOWS\system32                                                                                 |
+|76FB0000|CLBCATQ.DLL       |                                                  |2001.12.4414.700|498688 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77030000|COMRes.dll        |                                                  |2001.12.4414.700|821760 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77100000|oleaut32.dll      |                                                  |5.1.2600.6058   |551936 |2010-12-20 14:32:04|C:\WINDOWS\system32                                                                                 |
+|773B0000|comctl32.dll      |User Experience Controls Library                  |6.0.2900.6028   |1054208|2010-08-23 13:11:58|C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202|
+|774C0000|ole32.dll         |Microsoft OLE para Windows e Windows NT           |5.1.2600.6168   |1288192|2011-11-01 13:07:10|C:\WINDOWS\system32                                                                                 |
+|77B20000|apphelp.dll       |Application Compatibility Client Library          |5.1.2600.5512   |125952 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77BE0000|version.dll       |Version Checking and File Installation Libraries  |5.1.2600.5512   |18944  |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+|77BF0000|msvcrt.dll        |Windows NT CRT DLL                                |7.0.2600.5512   |343040 |2008-04-13 23:20:34|C:\WINDOWS\system32                                                                                 |
+|77DB0000|RPCRT4.dll        |Remote Procedure Call Runtime                     |5.1.2600.6022   |590848 |2010-08-16 05:45:00|C:\WINDOWS\system32                                                                                 |
+|77E50000|GDI32.dll         |GDI Client DLL                                    |5.1.2600.5698   |286720 |2008-10-23 09:37:46|C:\WINDOWS\system32                                                                                 |
+|77EA0000|SHLWAPI.dll       |Biblioteca de utilitário abreviado para Shell     |6.0.2900.5912   |474112 |2009-12-08 06:24:26|C:\WINDOWS\system32                                                                                 |
+|77F20000|Secur32.dll       |Security Support Provider Interface               |5.1.2600.5834   |56832  |2009-06-25 05:27:14|C:\WINDOWS\system32                                                                                 |
+|77F50000|advapi32.dll      |API de base do Windows 32 avançada                |5.1.2600.5755   |683520 |2009-02-09 07:53:26|C:\WINDOWS\system32                                                                                 |
+|7C800000|kernel32.dll      |DLL cliente da API BASE do Windows NT             |5.1.2600.5781   |1028608|2009-03-21 11:08:54|C:\WINDOWS\system32                                                                                 |
+|7C900000|ntdll.dll         |DLL de nível do NT                                |5.1.2600.6055   |734208 |2010-12-09 12:15:18|C:\WINDOWS\system32                                                                                 |
+|7C9C0000|shell32.dll       |DLL comum do Shell do Windows                     |6.0.2900.6242   |8492544|2012-06-08 11:25:20|C:\WINDOWS\system32                                                                                 |
+|7E360000|user32.dll        |DLL de Cliente API de usuário Windows XP          |5.1.2600.5512   |579072 |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0013F610   EDI: 0013F7A8
+EBX: 009BE680   ESI: 00000000
+ECX: 00000000   ESP: 0013F5F0
+EDX: 00000006   EIP: 00404A52
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0013F5F0: 0049EAAA   00404A52: 8A 0A 42 E9 82 FE FF FF C3 90 57 50 51 89 D7 31  ..B.......WPQ..1
+0013F5F4: 0013F95C   00404A62: C0 F2 AE 75 02 F7 D1 58 01 C1 58 5F E9 69 FE FF  ...u...X..X_.i..
+0013F5F8: 0040409C   00404A72: FF C3 57 50 51 89 D7 31 C0 F2 66 AF 75 02 F7 D1  ..WPQ..1..f.u...
+0013F5FC: 0013F624   00404A82: 58 01 C1 58 5F E9 BC FE FF FF C3 8D 40 00 31 C9  X..X_.......@.1.
+0013F600: 0045B4A0   00404A92: 85 D2 74 05 8B 4A FC D1 E9 E9 A8 FE FF FF C3 8D  ..t..J..........
+0013F604: 009BE680   00404AA2: 40 00 53 85 D2 74 18 8B 5A FC 85 DB 74 11 39 D9  @.S..t..Z...t.9.
+0013F608: 00000000   00404AB2: 7C 02 89 D9 88 08 40 92 E8 C5 DF FF FF 5B C3 C6  |.....@......[..
+0013F60C: 00000000   00404AC2: 00 00 5B C3 8B C0 85 C0 74 03 8B 40 FC C3 85 D2  ..[.....t..@....
+0013F610: 00000000   00404AD2: 74 3F 8B 08 85 C9 0F 84 62 FD FF FF 53 56 57 89  t?......b...SVW.
+0013F614: 00000000   00404AE2: C3 89 D6 8B 79 FC 8B 56 FC 01 FA 39 CE 74 17 E8  ....y..V...9.t..
+0013F618: 00000000   00404AF2: 5E 03 00 00 89 F0 8B 4E FC 8B 13 01 FA E8 80 DF  ^......N........
+0013F61C: 00000000   00404B02: FF FF 5F 5E 5B C3 E8 47 03 00 00 8B 03 89 F9 EB  .._^[..G........
+0013F620: 00000000   00404B12: E8 C3 85 D2 74 61 85 C9 0F 84 20 FD FF FF 3B 10  ....ta.... ...;.
+0013F624: 0013F76C   00404B22: 74 5C 3B 08 74 0E 50 51 E8 11 FD FF FF 5A 58 E9  t\;.t.PQ.....ZX.
+0013F628: 0049ED7B   00404B32: 9A FF FF FF 53 56 57 89 D3 89 CE 50 8B 43 FC 03  ....SVW....P.C..
+0013F62C: 009BF6EC   00404B42: 46 FC E8 67 FD FF FF 89 C7 89 C2 89 D8 8B 4B FC  F..g..........K.
+
+
+
+EurekaLog 5.0.1
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Tue, 15 Jan 2013 11:28:11 -0300
+  1.2 Name/Description: dicom_worklist.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+  1.5 Compilation Date: Tue, 15 Jan 2013 11:28:09 -0300
+
+Exception:
+-------------------------------------------------------------------------------------------------------------
+  2.1 Date   : Tue, 15 Jan 2013 11:33:49 -0300
+  2.2 Address: 00404A42
+  2.3 Module : dicom_worklist.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 00404A42 in module 'dicom_worklist.exe'. Read of address 00000006.
+
+Active Controls:
+-------------------------------------------------------------------------
+  3.1 Form Class   : Chrome_WidgetWin_1
+  3.2 Form Text    : Hallvard's Blog: Extended Class RTTI - Google Chrome
+  3.3 Control Class: TButton
+  3.4 Control Text : Button1
+
+Computer:
+---------------------------------------------------------------------
+  4.1 Name          : MOTA-CTI
+  4.2 User          : andre
+  4.3 Total Memory  : 2039 Mb
+  4.4 Free Memory   : 1016 Mb
+  4.5 Total Disk    : 43,07 Gb
+  4.6 Free Disk     : 5,37 Gb
+  4.7 System Up Time: 00:02:54:57
+  4.8 Processor     : Intel(R) Core(TM)2 Duo CPU     E7300  @ 2.66GHz
+  4.9 Display Mode  : 1280 x 720 x 32
+
+Operating System:
+------------------------------------
+  5.1 Type    : Microsoft Windows XP
+  5.2 Build # : 2600
+  5.3 Update  : Service Pack 3
+  5.4 Language: Português (Brasil)
+
+Network:
+--------------------------------
+  6.1 IP Address: 192.168.1.55
+  6.2 Submask   : 255.255.255.0
+  6.3 Gateway   : 192.168.1.1
+  6.4 DNS 1     : 200.175.5.139
+  6.5 DNS 2     : 200.175.89.139
+  6.6 DHCP      : OFF
+
+Call Stack Information:
+--------------------------------------------------------------------------------------------
+|Address |Module            |Unit              |Class    |Procedure/Method            |Line|
+--------------------------------------------------------------------------------------------
+| Running Thread: ID=704; Priority=0; Class=; [Main]                                       |
+|------------------------------------------------------------------------------------------|
+|00493CB7|dicom_worklist.exe|worklist.pas      |TWorklist|CriarXML                    |67  |
+|00493C38|dicom_worklist.exe|worklist.pas      |TWorklist|CriarXML                    |58  |
+|00493F8A|dicom_worklist.exe|main.pas          |TForm1   |Button1Click                |32  |
+|7E3799D3|user32.dll        |                  |         |NotifyWinEvent              |    |
+|7E3799CB|user32.dll        |                  |         |NotifyWinEvent              |    |
+|7C90ECBA|ntdll.dll         |                  |         |RtlMultiByteToUnicodeN      |    |
+|7C90EB94|ntdll.dll         |                  |         |RtlAnsiStringToUnicodeString|    |
+|7C90D328|ntdll.dll         |                  |         |ZwFindAtom                  |    |
+|7E37A97D|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E379719|user32.dll        |                  |         |PtInRect                    |    |
+|7E3792DE|user32.dll        |                  |         |SendMessageW                |    |
+|7E37929A|user32.dll        |                  |         |SendMessageW                |    |
+|7E37A993|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E37A97D|user32.dll        |                  |         |CallWindowProcA             |    |
+|7E37C1E4|user32.dll        |                  |         |DefWindowProcA              |    |
+|7C9010E0|ntdll.dll         |                  |         |RtlLeaveCriticalSection     |    |
+|7E3694DA|user32.dll        |                  |         |GetCapture                  |    |
+|7E37B3FC|user32.dll        |                  |         |CallNextHookEx              |    |
+|7E3696C2|user32.dll        |                  |         |DispatchMessageA            |    |
+|7E3696B8|user32.dll        |                  |         |DispatchMessageA            |    |
+|00494333|dicom_worklist.exe|dicom_worklist.dpr|         |                            |14  |
+|7C90DCB8|ntdll.dll         |                  |         |ZwSetInformationThread      |    |
+--------------------------------------------------------------------------------------------
+
+Modules Information:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name              |Description                                       |Version         |Size   |Modified           |Path                                                                                                |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|00400000|dicom_worklist.exe|                                                  |                |701952 |2013-01-15 11:28:10|C:\workspace\dicom_worklist                                                                         |
+|5B1C0000|uxtheme.dll       |Biblioteca UxTheme Microsoft                      |6.0.2900.5512   |219648 |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+|5D510000|comctl32.dll      |Common Controls Library                           |5.82.2900.6028  |617472 |2010-08-23 13:12:00|C:\WINDOWS\system32                                                                                 |
+|69B10000|msxml4.dll        |MSXML 4.0 SP 2                                    |4.20.9876.0     |1348432|2009-07-21 00:05:40|C:\WINDOWS\system32                                                                                 |
+|71A60000|WS2HELP.dll       |DLL de ajuda do Windows Socket 2.0 para Windows NT|5.1.2600.5512   |19968  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|71A70000|WS2_32.dll        |Windows Socket 2.0 32-Bit DLL                     |5.1.2600.5512   |82432  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|71A90000|wsock32.dll       |DLL de soquete para Windows de 32 bits            |5.1.2600.5512   |25088  |2008-04-13 23:20:44|C:\WINDOWS\system32                                                                                 |
+|746E0000|MSCTF.dll         |DLL de servidor MSCTF                             |5.1.2600.5512   |297984 |2008-04-13 23:20:32|C:\WINDOWS\system32                                                                                 |
+|75290000|msctfime.ime      |Microsoft Text Frame Work Service IME             |5.1.2600.5768   |177152 |2009-02-27 01:57:32|C:\WINDOWS\system32                                                                                 |
+|76360000|IMM32.DLL         |Windows XP IMM32 API Client DLL                   |5.1.2600.5512   |110080 |2008-04-13 23:20:28|C:\WINDOWS\system32                                                                                 |
+|76BD0000|PSAPI.DLL         |Process Status Helper                             |5.1.2600.5512   |23040  |2008-04-13 23:20:38|C:\WINDOWS\system32                                                                                 |
+|76FB0000|CLBCATQ.DLL       |                                                  |2001.12.4414.700|498688 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77030000|COMRes.dll        |                                                  |2001.12.4414.700|821760 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77100000|oleaut32.dll      |                                                  |5.1.2600.6058   |551936 |2010-12-20 14:32:04|C:\WINDOWS\system32                                                                                 |
+|773B0000|comctl32.dll      |User Experience Controls Library                  |6.0.2900.6028   |1054208|2010-08-23 13:11:58|C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202|
+|774C0000|ole32.dll         |Microsoft OLE para Windows e Windows NT           |5.1.2600.6168   |1288192|2011-11-01 13:07:10|C:\WINDOWS\system32                                                                                 |
+|77B20000|apphelp.dll       |Application Compatibility Client Library          |5.1.2600.5512   |125952 |2008-04-13 23:20:24|C:\WINDOWS\system32                                                                                 |
+|77BE0000|version.dll       |Version Checking and File Installation Libraries  |5.1.2600.5512   |18944  |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+|77BF0000|msvcrt.dll        |Windows NT CRT DLL                                |7.0.2600.5512   |343040 |2008-04-13 23:20:34|C:\WINDOWS\system32                                                                                 |
+|77DB0000|RPCRT4.dll        |Remote Procedure Call Runtime                     |5.1.2600.6022   |590848 |2010-08-16 05:45:00|C:\WINDOWS\system32                                                                                 |
+|77E50000|GDI32.dll         |GDI Client DLL                                    |5.1.2600.5698   |286720 |2008-10-23 09:37:46|C:\WINDOWS\system32                                                                                 |
+|77EA0000|SHLWAPI.dll       |Biblioteca de utilitário abreviado para Shell     |6.0.2900.5912   |474112 |2009-12-08 06:24:26|C:\WINDOWS\system32                                                                                 |
+|77F20000|Secur32.dll       |Security Support Provider Interface               |5.1.2600.5834   |56832  |2009-06-25 05:27:14|C:\WINDOWS\system32                                                                                 |
+|77F50000|advapi32.dll      |API de base do Windows 32 avançada                |5.1.2600.5755   |683520 |2009-02-09 07:53:26|C:\WINDOWS\system32                                                                                 |
+|7C800000|kernel32.dll      |DLL cliente da API BASE do Windows NT             |5.1.2600.5781   |1028608|2009-03-21 11:08:54|C:\WINDOWS\system32                                                                                 |
+|7C900000|ntdll.dll         |DLL de nível do NT                                |5.1.2600.6055   |734208 |2010-12-09 12:15:18|C:\WINDOWS\system32                                                                                 |
+|7C9C0000|shell32.dll       |DLL comum do Shell do Windows                     |6.0.2900.6242   |8492544|2012-06-08 11:25:20|C:\WINDOWS\system32                                                                                 |
+|7E360000|user32.dll        |DLL de Cliente API de usuário Windows XP          |5.1.2600.5512   |579072 |2008-04-13 23:20:40|C:\WINDOWS\system32                                                                                 |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0013F610   EDI: 0013F7A8
+EBX: 009AE5B8   ESI: 00000000
+ECX: 00000000   ESP: 0013F5F0
+EDX: 00000006   EIP: 00404A42
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0013F5F0: 00493CBC   00404A42: 8A 0A 42 E9 82 FE FF FF C3 90 57 50 51 89 D7 31  ..B.......WPQ..1
+0013F5F4: 0013F95C   00404A52: C0 F2 AE 75 02 F7 D1 58 01 C1 58 5F E9 69 FE FF  ...u...X..X_.i..
+0013F5F8: 0040408C   00404A62: FF C3 57 50 51 89 D7 31 C0 F2 66 AF 75 02 F7 D1  ..WPQ..1..f.u...
+0013F5FC: 0013F624   00404A72: 58 01 C1 58 5F E9 BC FE FF FF C3 8D 40 00 31 C9  X..X_.......@.1.
+0013F600: 0045AF58   00404A82: 85 D2 74 05 8B 4A FC D1 E9 E9 A8 FE FF FF C3 8D  ..t..J..........
+0013F604: 009AE5B8   00404A92: 40 00 53 85 D2 74 18 8B 5A FC 85 DB 74 11 39 D9  @.S..t..Z...t.9.
+0013F608: 00000000   00404AA2: 7C 02 89 D9 88 08 40 92 E8 C5 DF FF FF 5B C3 C6  |.....@......[..
+0013F60C: 00000000   00404AB2: 00 00 5B C3 8B C0 85 C0 74 03 8B 40 FC C3 85 D2  ..[.....t..@....
+0013F610: 00000000   00404AC2: 74 3F 8B 08 85 C9 0F 84 62 FD FF FF 53 56 57 89  t?......b...SVW.
+0013F614: 00000000   00404AD2: C3 89 D6 8B 79 FC 8B 56 FC 01 FA 39 CE 74 17 E8  ....y..V...9.t..
+0013F618: 00000000   00404AE2: 5E 03 00 00 89 F0 8B 4E FC 8B 13 01 FA E8 80 DF  ^......N........
+0013F61C: 00000000   00404AF2: FF FF 5F 5E 5B C3 E8 47 03 00 00 8B 03 89 F9 EB  .._^[..G........
+0013F620: 00000000   00404B02: E8 C3 85 D2 74 61 85 C9 0F 84 20 FD FF FF 3B 10  ....ta.... ...;.
+0013F624: 0013F76C   00404B12: 74 5C 3B 08 74 0E 50 51 E8 11 FD FF FF 5A 58 E9  t\;.t.PQ.....ZX.
+0013F628: 00493F8F   00404B22: 9A FF FF FF 53 56 57 89 D3 89 CE 50 8B 43 FC 03  ....SVW....P.C..
+0013F62C: 009AF624   00404B32: 46 FC E8 67 FD FF FF 89 C7 89 C2 89 D8 8B 4B FC  F..g..........K.
+
+
+
