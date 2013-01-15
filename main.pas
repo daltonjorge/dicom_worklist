@@ -35,7 +35,7 @@ begin
     Patient_Id := '50799178';
     Patient_Name := 'LUCIENE DO NASCIMENTO MARCELINO';
     Patient_Birthdate := '19611203';
-    Patient_Birthdate := 'F';
+    Patient_Sex := 'F';
     Patient_Location := 'Externo';
     Accession_Number := '51914036';
     Referring_Physician := 'GOMES^JOSE AIRTON FURTADO';

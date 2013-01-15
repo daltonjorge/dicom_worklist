@@ -2,6 +2,8 @@ unit worklist;
 
 interface
 
+uses XMLIntf, XmlDoc;
+
 {$METHODINFO ON}
 type TWorklist = class
   procedure CriarXML(caminho: String);
@@ -24,6 +26,7 @@ type TWorklist = class
     FDate: String;
     FTime: String;
     FRequestedProcedureId: String;
+    procedure CriaNo(NoRaiz: IXMLNODE; campo: String);
   published
     property Site: String read FSite write FSite;
     property Patient_Id: String read FPatientId write FPatientId;
@@ -47,10 +50,10 @@ type TWorklist = class
 
 implementation
 
-uses XMLIntf, XmlDoc, TypInfo, Dialogs, SysUtils;
+uses TypInfo, Dialogs, SysUtils;
 
 procedure TWorklist.CriarXML(caminho: String);
-Var
+var
   XML : IXMLDOCUMENT;
   RootNode, CurNode : IXMLNODE;
   lista : TPropList;
@@ -61,14 +64,44 @@ begin
   XML.Encoding := 'utf-8';
   XML.Options := [doNodeAutoIndent];
   RootNode := XML.AddChild('MWL_ITEM');
+
+  // Criação dos nós varrendo o array de propriedades da classe, usando reflection
   count := GetPropList(Self.ClassInfo, tkAny, @lista);
-  for I := 0 to count - 1 do
-  begin
-    campo := lista[I]^.Name;
-    CurNode := RootNode.AddChild(UpperCase(campo));
-    CurNode.Text := GetPropValue(Self, campo);
-  end;
+//  for I := 0 to count - 1 do
+//  begin
+//    campo := lista[I]^.Name;
+//    CurNode := RootNode.AddChild(UpperCase(campo));
+//    CurNode.Text := GetPropValue(Self, campo);
+//  end;
+
+  // Criação dos nós de forma manual
+  Self.CriaNo(RootNode, 'Site');
+  Self.CriaNo(RootNode, 'Patient_Id');
+  Self.CriaNo(RootNode, 'Patient_Name');
+  Self.CriaNo(RootNode, 'Patient_Birthdate');
+  Self.CriaNo(RootNode, 'Patient_Sex');
+  Self.CriaNo(RootNode, 'Patient_Location');
+  Self.CriaNo(RootNode, 'Accession_Number');
+  Self.CriaNo(RootNode, 'Referring_Physician');
+  Self.CriaNo(RootNode, 'Requesting_Physician');
+  Self.CriaNo(RootNode, 'Requesting_Service');
+  Self.CriaNo(RootNode, 'Modality');
+  Self.CriaNo(RootNode, 'Requested_Procedure_Description');
+  Self.CriaNo(RootNode, 'Station_Ae_Title');
+  Self.CriaNo(RootNode, 'Scheduled_Station_Ae_Title');
+  Self.CriaNo(RootNode, 'Scheduled_Procedure_Step_Id');
+  Self.CriaNo(RootNode, 'Date');
+  Self.CriaNo(RootNode, 'Time');
+  Self.CriaNo(RootNode, 'Requested_Procedure_Id');
+
   XMl.SaveToFile(caminho+'\Accession_Number_'+Self.Accession_Number+'.xml');
+end;
+
+procedure TWorklist.CriaNo(NoRaiz: IXMLNODE; campo: String);
+var NoAtual: IXMLNODE;
+begin
+  NoAtual := NoRaiz.AddChild(UpperCase(campo));
+  NoAtual.Text := GetPropValue(Self, campo);
 end;
 
 end.
